@@ -1,0 +1,35 @@
+
+h3 {
+    font-family: "Arial", sans-serif; 
+    color: purple;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+.class1 {
+    color: red;
+}
+
+.class2 {
+    font-weight: bold;
+}
+
+
+.photo {
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+}
+
+.rounded {
+    border-radius: 15px;
+    height: 100px;
+    width: 200px;
+}
+
+
+.professional {
+    background-color: lightblue;
+}
+
+.personal {
+    background-color: lightgreen;
+}
