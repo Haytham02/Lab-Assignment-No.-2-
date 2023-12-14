@@ -16,7 +16,7 @@
 
   <style>
     .bordered {
-      width: 100px;
+      width: 160px;
       height: 100px;
       padding: 15px;
       border: 5px inset rgb(66, 64, 64);
@@ -41,13 +41,13 @@
             <h1>Welcome to My Portfolio</h1>
 
             <p>
-              Hello, I'm El Fettah Haytham 17 years old and I am from morocco.
+              Hello, I'm El Fettah Haytham 18 years old and I am from morocco.
               </p>
               <p>
                 I'm very passionate about game programming due to playing lots of video games,
               </p>
               <p>
-                i have absolutly no experience in programming,but i consider myself pretty decent in navigating through the computer though.
+                i consider my self an amateur now in programming, i ve been enjoying it a lot lately.
               </p>
               <p>
                 one of my hobbies is working out,it gets my blood pumping and to challenge my limits physically and mentally.
@@ -58,10 +58,7 @@
               </p>
               <footer>
                 <cite>Quran 94:5-6</cite>
-              <h2>My Skills</h2>
-              <ul>
-                <li>html (work in progress)</li>
-                <li>CSS (work in progress)</li>
+              
         </td>
     </tr>
 </table>
@@ -80,21 +77,33 @@
 <br>
 <br>
 <br>
+
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
+
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
+<h2>CLOCK</h2>
 <br>
 <br>
+
 <br>
+<div class="container">
+<div class="clock">
+  <span id="hrs">00</span>
+  <span>:</span>
+  <span id="min">00</span>
+  <span>:</span>
+  <span id="sec" >00</span>
+</div>
 <br>
 <br>
 <br>
@@ -116,6 +125,22 @@
 <br>
 <br>
 <br>
+<div class="skills">
+  <h1>my skills</h1>
+  <li><h3>html</h3>
+      <span class="bar"><span class="html"></span></span>
+  </li>
+  <li><h3>cpp</h3>
+      <span class="bar"><span class="cpp"></span></span>
+  </li>
+  <li><h3>javascript</h3>
+      <span class="bar"><span class="javascript"></span></span>
+  </li>
+  <li><h3>css</h3>
+      <span class="bar"><span class="css"></span></span>
+  </li>
+</div>
+
 <br>
 <br>
 <br>
@@ -150,7 +175,7 @@ o   o   o      o   o    o
     <h2>Contact Information</h2>
     <p>Email: haytamh970@gmail.com.</p>
    <p>Phone: (514) 242-6103</p>
-   <p><a href="portfoliopage.html">SOME OF MY WORK</a></p>
+   
 
    <footer>
     <p>&copy; 2023 El Fettah Haytham</p>
@@ -175,7 +200,25 @@ o   o   o      o   o    o
 
     <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
     
+    <script>
+      let hrs = document.getElementById("hrs")
+      let min =document.getElementById("min")
+      let sec = document.getElementById("sec")
 
+      setInterval(()=>{
+        let currentTime = new Date();
+      
+      hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
+      min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+      sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+
+
+      },1000)
+
+      
+
+
+    </script>
 
 
 </body>
